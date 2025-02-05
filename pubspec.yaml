@@ -12,6 +12,7 @@ dependencies:
   dio: ^5.8.0+1
   flutter:
     sdk: flutter
+  flutter_animate: ^4.5.2
   flutter_bloc: ^9.0.0
   flutter_localizations:
     sdk: flutter
