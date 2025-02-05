@@ -7,7 +7,7 @@ environment:
   sdk: ^3.5.0
 
 dependencies:
-  auto_route: ^8.1.4
+  auto_route: ^8.3.0
   bloc: ^9.0.0
   dio: ^5.8.0+1
   flutter:
