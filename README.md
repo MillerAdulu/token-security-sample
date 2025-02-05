@@ -178,13 +178,6 @@ Alternatively, run `flutter run` and code generation will take place automatical
 
 ## Notes
 Meetup Wednesday
-
-
-KickOff
-⁠ So @Miller Adulu  would you consider this project small? I just want to see like how do you gauge a project. Since multiple people were contributing it felt quite big-medium sized to me.
-
-Also depending on the answer you choose from above would you follow the MVC you mentioned or stick to this?
-
 Today’s Scope
 - Token Security
 
