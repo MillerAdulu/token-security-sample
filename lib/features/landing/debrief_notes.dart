@@ -29,7 +29,6 @@ class _DebriefNotesPageState extends State<DebriefNotesPage> {
 
     return Scaffold(
       appBar: AppBar(
-
         title: Text(
           l10n.debriefNotes,
           style: CustomTextTheme.customTextTheme().displayLarge?.copyWith(
