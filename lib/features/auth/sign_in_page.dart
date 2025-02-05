@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:refresher/features/auth/cubit/sign_in_cubit.dart';
@@ -17,8 +18,11 @@ class SignInPage extends StatefulWidget {
 }
 
 class _SignInPageState extends State<SignInPage> {
-  final _emailController = TextEditingController();
-  final _passwordController = TextEditingController();
+  final _emailController = TextEditingController(
+    text: kDebugMode ? 'member.mills@parkroadfellowship.org' : '',
+  );
+  final _passwordController =
+      TextEditingController(text: kDebugMode ? 'password' : '');
   final _hidePasswordNotifier = ValueNotifier<bool>(true);
 
   bool _isLoading = false;

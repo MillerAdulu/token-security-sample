@@ -96,14 +96,14 @@ class DebriefNoteCard extends StatelessWidget {
           Container(
             width: width,
             padding: const EdgeInsets.symmetric(
-              horizontal: 50,
-              vertical: 60,
+              horizontal: 16,
+              vertical: 16,
             ),
             margin: const EdgeInsets.symmetric(horizontal: 16),
             decoration: BoxDecoration(
               color:
                   AppTheme.appTheme().kSecondaryColorV2.withValues(alpha: .3),
-              borderRadius: BorderRadius.circular(48),
+              borderRadius: BorderRadius.circular(16),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
