@@ -7,7 +7,7 @@ environment:
   sdk: ^3.5.0
 
 dependencies:
-  auto_route: ^8.1.4
+  auto_route: ^8.3.0
   bloc: ^9.0.0
   dio: ^5.8.0+1
   flutter:
@@ -28,7 +28,7 @@ dependencies:
   pretty_dio_logger: ^1.4.0
 
 dev_dependencies:
-  auto_route_generator: ^8.0.0
+  auto_route_generator: ^8.1.0
   bloc_test: ^10.0.0
   build_runner: ^2.4.13
   flutter_test:
