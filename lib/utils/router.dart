@@ -7,6 +7,7 @@ class RefresherRouter extends $RefresherRouter {
   static const String decisionRoute = '/';
   static const String signInRoute = '/sign-in';
   static const String landingRoute = '/landing';
+  static const String debriefNotesRoute = '/debrief-notes';
 
   @override
   List<AutoRoute> get routes => [
@@ -15,6 +16,13 @@ class RefresherRouter extends $RefresherRouter {
         AutoRoute(page: SignInRoute.page, path: signInRoute),
 
         // Home
-        AutoRoute(page: LandingRoute.page, path: landingRoute),
+        AutoRoute(
+          page: LandingRoute.page,
+          path: landingRoute,
+        ),
+        AutoRoute(
+          page: DebriefNotesRoute.page,
+          path: debriefNotesRoute,
+        ),
       ];
 }

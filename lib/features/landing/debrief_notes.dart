@@ -1,24 +1,21 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:refresher/features/landing/cubit/get_debrief_notes_cubit.dart';
+import 'package:refresher/features/landing/landing_page.dart';
 import 'package:refresher/l10n/l10n.dart';
-import 'package:refresher/models/debrief_note.dart';
 import 'package:refresher/utils/color_pallete.dart';
 import 'package:refresher/utils/custom_text_theme.dart';
-import 'package:refresher/utils/misc.dart';
-import 'package:refresher/utils/router.dart';
 
 @RoutePage()
-class LandingPage extends StatefulWidget {
-  const LandingPage({super.key});
+class DebriefNotesPage extends StatefulWidget {
+  const DebriefNotesPage({super.key});
 
   @override
-  State<LandingPage> createState() => _LandingPageState();
+  State<DebriefNotesPage> createState() => _DebriefNotesPageState();
 }
 
-class _LandingPageState extends State<LandingPage> {
+class _DebriefNotesPageState extends State<DebriefNotesPage> {
   @override
   void initState() {
     super.initState();
@@ -32,7 +29,7 @@ class _LandingPageState extends State<LandingPage> {
 
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false,
+
         title: Text(
           l10n.debriefNotes,
           style: CustomTextTheme.customTextTheme().displayLarge?.copyWith(
@@ -74,64 +71,6 @@ class _LandingPageState extends State<LandingPage> {
             },
           );
         },
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: AppTheme.appTheme().kPrimaryColorV2,
-        onPressed: () =>
-            context.router.pushNamed(RefresherRouter.debriefNotesRoute),
-        child: const Icon(
-          Icons.add,
-          color: Colors.white,
-        ),
-      ),
-    );
-  }
-}
-
-class DebriefNoteCard extends StatelessWidget {
-  const DebriefNoteCard({
-    required this.debriefNote,
-    super.key,
-  });
-
-  final RefresherDebriefNote debriefNote;
-
-  @override
-  Widget build(BuildContext context) {
-    final width = MediaQuery.sizeOf(context).width;
-    return Animate(
-      effects: const [SaturateEffect()],
-      child: Stack(
-        children: [
-          Container(
-            width: width,
-            padding: const EdgeInsets.symmetric(
-              horizontal: 16,
-              vertical: 16,
-            ),
-            margin: const EdgeInsets.symmetric(horizontal: 16),
-            decoration: BoxDecoration(
-              color:
-                  AppTheme.appTheme().kSecondaryColorV2.withValues(alpha: .3),
-              borderRadius: BorderRadius.circular(16),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  debriefNote.note,
-                  style: CustomTextTheme.customTextTheme().bodySmall,
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  Misc.formatDateTime(debriefNote.createdAt),
-                  style: CustomTextTheme.customTextTheme().bodySmall,
-                ),
-                const SizedBox(height: 8),
-              ],
-            ),
-          ),
-        ],
       ),
     );
   }
