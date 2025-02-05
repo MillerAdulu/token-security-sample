@@ -3,6 +3,8 @@ import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
+import 'package:refresher/services/hive_service.dart';
+import 'package:refresher/utils/singletons.dart';
 
 class AppBlocObserver extends BlocObserver {
   const AppBlocObserver();
@@ -28,6 +30,9 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
   Bloc.observer = const AppBlocObserver();
 
   // Add cross-flavor configuration here
+  Singletons.setup();
+
+  await getIt<HiveService>().initBoxes();
 
   runApp(await builder());
 }
