@@ -174,3 +174,70 @@ Alternatively, run `flutter run` and code generation will take place automatical
 [very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
 [very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
 [very_good_cli_link]: https://github.com/VeryGoodOpenSource/very_good_cli
+
+
+## Notes
+Meetup Wednesday
+
+
+KickOff
+⁠ So @Miller Adulu  would you consider this project small? I just want to see like how do you gauge a project. Since multiple people were contributing it felt quite big-medium sized to me.
+
+Also depending on the answer you choose from above would you follow the MVC you mentioned or stick to this?
+
+Today’s Scope
+- Token Security
+
+Knowing Flutter !== Knowing Mobile Development
+
+Extras
+- HTTP Certificate Pinning
+- 
+
+1: Set the token to expire after a set time so that a log-in is forced
+Useful for:
+- Where tight security isn’t required
+- Users de-activated elsewhere so when they are de-activated, they shouldn’t be able to access the app since the token is long living (Example: User deactivated on Google Admin, so their login won’t work, but they may have a valid token from the backend where the backend prefers to issue long-lasting tokens)
+- 
+
+
+Steps
+- Log in
+- Go on the landing page
+- Open the debrief page
+
+2: Refresh token
+Useful for:
+- Access Token
+- Refresh
+- More security-conscious APIs where instead of a user being forced to log back in to maintain the experience, they get two tokens, access token and a refresh token. 
+- The access token is the token used to make the calls, then when it expires in the middle of a transaction to the target API, it’s refreshed and the request retried so that it doesn’t break the user flow
+
+
+- Call login endpoint (Username & Password)
+- Receive Access Token (To call the APIs) & Receive the Refresh Token (Longer lifespan)
+- Call your APIs normally, 
+- At some point, the token expires (5 minutes, 10 minutes, 15 minutes, 1 request -> Token expired, refresh, then make next request)
+- At this point, you use your refresh token, to call an endpoint that will give you a new access token
+- Use the new token to make the request
+
+Steps: (feature/setup-refresh-token)
+- Disable hive is logged out: lib/services/hive_service.dart
+- Enable error interceptor: lib/utils/network.dart
+- Enable dummy token expiration: lib/services/debrief_service.dart
+NB: Won’t need the error handlers for 401 in the individual methods
+
+3: Auto log out
+Useful for:
+- Banks apps where you need to have the device request you to get signed out first
+- So banks are security sensitive
+- Slightly tedious to set-up, was unable to cover this in the sample app on time
+
+Process
+- Wrap  the app with Overlay (Portal) 
+- Have a ticker to manage the time
+- When the time expires, use the overlay portal to show the prompt
+- Use Flutter to force an app restart, once it fails the check, then you have to log in again manually
+
+
+https://pub.dev/packages/local_session_timeout
