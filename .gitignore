@@ -110,3 +110,9 @@ app.*.map.json
 !.idea/codeStyles/
 !.idea/dictionaries/
 !.idea/runConfigurations/
+
+# Build files
+*.g.dart
+*.freezed.dart
+*.gr.dart
+lib/versioning/build_version.dart

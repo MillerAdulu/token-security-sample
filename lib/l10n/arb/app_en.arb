@@ -1,7 +1,573 @@
 {
     "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
-    }
+    "enterEmail": "Enter Email",
+    "@enterEmail": {},
+    "enterPassword": "Enter Password",
+    "@enterPassword": {},
+    "signIn": "Sign In",
+    "@signIn": {},
+    "signingIn": "Signing In ...",
+    "@signingIn": {},
+    "missions": "Missions",
+    "@missions": {},
+    "myAccount": "My Account",
+    "@myAccount": {},
+    "signOut": "Sign Out",
+    "@signOut": {},
+    "myProfile": "My Profile",
+    "@myProfile": {},
+    "name": "Name",
+    "@name": {},
+    "enterName": "Enter Name",
+    "@enterName": {},
+    "email": "Email",
+    "@email": {},
+    "viewProfile": "View Profile",
+    "@viewProfile": {},
+    "viewProfileDetails": "Your name and email address",
+    "@viewProfileDetails": {},
+    "byUsing": "By using this app, you are agreeing to our\n",
+    "@byUsing": {},
+    "terms": " Terms",
+    "@terms": {},
+    "and": " and ",
+    "@and": {},
+    "privacyPolicy": " Privacy Policy",
+    "@privacyPolicy": {},
+    "noMissions": "No missions",
+    "@noMissions": {},
+    "pleaseWait": "Please wait for an update from the missions desk",
+    "@pleaseWait": {},
+    "missionStart": "Starts on: {missionDate}, {missionTime}",
+    "@missionStart": {
+        "placeholders": {
+            "missionDate": {
+                "type": "String"
+            },
+            "missionTime": {
+                "type": "String"
+            }
+        }
+    },
+    "missionEnd": "Ends on: {missionDate}, {missionTime}",
+    "@missionEnd": {
+        "placeholders": {
+            "missionDate": {
+                "type": "String"
+            },
+            "missionTime": {
+                "type": "String"
+            }
+        }
+    },
+    "missionType": "Mission Type: {missionType}",
+    "@missionType": {
+        "placeholders": {
+            "missionType": {
+                "type": "String"
+            }
+        }
+    },
+    "missionDetails": "Mission Details",
+    "@missionDetails": {},
+    "sendMe": "Send Me",
+    "@sendMe": {},
+    "going": "Missioners",
+    "@going": {},
+    "missionGround": "Mission Ground",
+    "@missionGround": {},
+    "noSubscribers": "No subscribers",
+    "@noSubscribers": {},
+    "comingFrom": "Coming from: {residence}",
+    "@comingFrom": {
+        "placeholders": {
+            "residence": {
+                "type": "String"
+            }
+        }
+    },
+    "successfullySubscribed": "Your request to service this mission has been received. Should there be any changes, you will be notified.",
+    "@successfullySubscribed": {},
+    "myMissions": "My Missions",
+    "@myMissions": {},
+    "address": "Address & Directions",
+    "@address": {},
+    "missionPrepNotes": "Preparation Notes",
+    "@missionPrepNotes": {},
+    "population": "Population: {totalStudents} learners",
+    "@population": {
+        "placeholders": {
+            "totalStudents": {
+                "type": "int"
+            }
+        }
+    },
+    "upcoming": "Upcoming",
+    "@upcoming": {},
+    "noUpcomingMissions": "No upcoming missions",
+    "@noUpcomingMissions": {},
+    "past": "Past",
+    "@past": {},
+    "noPastMissions": "No past missions",
+    "@noPastMissions": {},
+    "theme": "Theme/Topic",
+    "@theme": {},
+    "souls": "Souls",
+    "@souls": {},
+    "recordSoul": "Record a Soul",
+    "@recordSoul": {},
+    "fullName": "Full Name",
+    "@fullName": {},
+    "classGroup": "Class",
+    "@classGroup": {},
+    "record": "Record",
+    "@record": {},
+    "soulRecorded": "Soul recorded",
+    "@soulRecorded": {},
+    "recording": "Recording ...",
+    "@recording": {},
+    "selectClass": "Select Class",
+    "@selectClass": {},
+    "debriefNotes": "Debrief Notes",
+    "@debriefNotes": {},
+    "note": "Note",
+    "@note": {},
+    "noteRecorded": "Note recorded",
+    "@noteRecorded": {},
+    "contactPersons": "Contact Persons",
+    "@contactPersons": {},
+    "successfullyWithdrawn": "You have successfully withdrawn from this mission",
+    "@successfullyWithdrawn": {},
+    "withdraw": "Withdraw",
+    "@withdraw": {},
+    "missionariesNeeded": "Missioners Needed: {missionariesNeeded} more",
+    "@missionariesNeeded": {
+        "placeholders": {
+            "missionariesNeeded": {
+                "type": "int"
+            }
+        }
+    },
+    "missionariesRequested": "Missioners Requested: {missionariesRequested}",
+    "@missionariesRequested": {
+        "placeholders": {
+            "missionariesRequested": {
+                "type": "int"
+            }
+        }
+    },
+    "learn": "Learn",
+    "@learn": {},
+    "progress": "Progress: {progress}%",
+    "@progress": {
+        "placeholders": {
+            "progress": {
+                "type": "int"
+            }
+        }
+    },
+    "courseDetails": "Course Details",
+    "@courseDetails": {},
+    "description": "Description",
+    "@description": {},
+    "percentage": "{progress}%",
+    "@percentage": {
+        "placeholders": {
+            "progress": {
+                "type": "int"
+            }
+        }
+    },
+    "modules": "Modules",
+    "@modules": {},
+    "moduleDetails": "Module Details",
+    "@moduleDetails": {},
+    "lessons": "Lessons",
+    "@lessons": {},
+    "lessonDetails": "Lesson Details",
+    "@lessonDetails": {},
+    "content": "Content",
+    "@content": {},
+    "video": "Video (Tap to play)",
+    "@video": {},
+    "document": "Document (Tap to view)",
+    "@document": {},
+    "audio": "Audio (Tap to play)",
+    "@audio": {},
+    "complete": "Complete",
+    "@complete": {},
+    "completing": "Completing ...",
+    "@completing": {},
+    "completed": "Completed",
+    "@completed": {},
+    "noCourses": "No courses",
+    "@noCourses": {},
+    "yetToBeEnroled": "You are yet to be enroled for a course",
+    "@yetToBeEnroled": {},
+    "registerStudent": "Register as a new student",
+    "@registerStudent": {},
+    "registerNewStudent": "Register a new student account",
+    "@registerNewStudent": {},
+    "studentIntro": "To keep your identity private, you get a random credentials that you can use to access the app. Please ensure to save them somewhere if you want to come back to the app at another time.",
+    "@studentIntro": {},
+    "iAmReady": "I am ready",
+    "@iAmReady": {},
+    "registering": "Registering ...",
+    "@registering": {},
+    "registered": "You have been registered successfully. Please save your credentials somewhere safe.",
+    "@registered": {},
+    "iHaveWritten": "I have written them down",
+    "@iHaveWritten": {},
+    "credentials": "Your credentials\n\nEmail: {email}\nPassword: {password}\n\nPlease write them down, they will disappear once you log out",
+    "@credentials": {
+        "placeholders": {
+            "email": {
+                "type": "String"
+            },
+            "password": {
+                "type": "int"
+            }
+        }
+    },
+    "faq": "FAQs",
+    "@faq": {},
+    "noFaqs": "No FAQs",
+    "@noFaqs": {},
+    "myQuestions": "My Questions",
+    "@myQuestions": {},
+    "noQuestions": "No questions",
+    "@noQuestions": {},
+    "replies": "Replies",
+    "@replies": {},
+    "noReplies": "No replies yet",
+    "@noReplies": {},
+    "yourQuestion": "Your Question",
+    "@yourQuestion": {},
+    "createQuestion": "Create Question",
+    "@createQuestion": {},
+    "enquiry": "Enquiry",
+    "@enquiry": {},
+    "enquiryRecorded": "Your enquiry has been recorded. Please wait for a response",
+    "@enquiryRecorded": {},
+    "reply": "Reply",
+    "@reply": {},
+    "replySent": "Your reply has been sent",
+    "@replySent": {},
+    "replying": "Replying ...",
+    "@replying": {},
+    "rules": "Don't share your contact information or any personal information in your questions or replies",
+    "@rules": {},
+    "studentEnquiries": "Students",
+    "@studentEnquiries": {},
+    "studentQuestions": "Student Questions",
+    "@studentQuestions": {},
+    "askQuestion": "to ask a question",
+    "@askQuestion": {},
+    "announcements": "Announcements",
+    "@announcements": {},
+    "noAnnouncements": "No announcements",
+    "@noAnnouncements": {},
+    "pleaseWaitForOS": "Please wait for an update from the organising secretary's desk",
+    "@pleaseWaitForOS": {},
+    "publishedAt": "Date: {publishingDate}",
+    "@publishedAt": {
+        "placeholders": {
+            "publishingDate": {
+                "type": "String"
+            }
+        }
+    },
+    "missionQuestions": "Mission Questions",
+    "@missionQuestions": {},
+    "addQuestion": "Add Question",
+    "@addQuestion": {},
+    "questionRecorded": "This question has been recorded",
+    "@questionRecorded": {},
+    "recordQuestion": "Record question",
+    "@recordQuestion": {},
+    "noNotes": "No notes",
+    "@noNotes": {},
+    "hello": "Hello, {name}",
+    "@hello": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            }
+        }
+    },
+    "iWantTo": "Right now, I want to",
+    "@iWantTo": {},
+    "goToAMission": "Go for a mission",
+    "@goToAMission": {},
+    "learnSomething": "Learn something",
+    "@learnSomething": {},
+    "ministerToAStudent": "Minister to a student",
+    "@ministerToAStudent": {},
+    "all": "All",
+    "@all": {},
+    "subscribed": "Subscribed",
+    "@subscribed": {},
+    "version": "Version: {version}",
+    "@version": {
+        "placeholders": {
+            "version": {
+                "type": "String"
+            }
+        }
+    },
+    "faqs": "for some answers",
+    "@faqs": {},
+    "lookingFor": "I am looking",
+    "@lookingFor": {},
+    "askAQuestion": "Ask a question",
+    "@askAQuestion": {},
+    "ask": "Ask",
+    "@ask": {},
+    "questions": "Questions",
+    "@questions": {},
+    "memberships": "Memberships",
+    "@memberships": {},
+    "prayerAlert": "Prayer watch",
+    "@prayerAlert": {},
+    "amen": "Weka tick ✅",
+    "@amen": {},
+    "viewCredentials": "for my private credentials",
+    "@viewCredentials": {},
+    "studentEmail": "Enter student assigned email",
+    "@studentEmail": {},
+    "expenses": "Expenses",
+    "@expenses": {},
+    "confirmationMessage": "Confirmation Message",
+    "@confirmationMessage": {},
+    "expenseCategory": "Expense Category",
+    "@expenseCategory": {},
+    "transactionType": "Transaction Type",
+    "@transactionType": {},
+    "amountSpent": "Amount spent",
+    "@amountSpent": {},
+    "selectExpenseCategory": "Select the expense category",
+    "@selectExpenseCategory": {},
+    "selectTransactionType": "Select the transaction Type",
+    "@selectTransactionType": {},
+    "enterAmount": "Enter Amount",
+    "@enterAmount": {},
+    "enterConfirmationMessage": "Enter confirmation message",
+    "@enterConfirmationMessage": {},
+    "askMissionDeskToDisburseFunds": "Ask the missions desk to disburse funds",
+    "@askMissionDeskToDisburseFunds": {},
+    "amountReceived": "Amount received",
+    "@amountReceived": {},
+    "tokenAmount": "Token from institution",
+    "@tokenAmount": {},
+    "amountToRefund": "Amount to refund \n(Charge removed)",
+    "@amountToRefund": {},
+    "refundedAmount": "Refunded amount",
+    "@refundedAmount": {},
+    "fullyRefunded": "Fully refunded?",
+    "@fullyRefunded": {},
+    "balance": "Balance",
+    "@balance": {},
+    "yes": "Yes",
+    "@yes": {},
+    "no": "No",
+    "@no": {},
+    "unitCost": "Unit Cost",
+    "@unitCost": {},
+    "quantity": "Quantity",
+    "@quantity": {},
+    "totalCost": "Total \n(Charge)",
+    "@totalCost": {},
+    "item": "Item",
+    "@item": {},
+    "unitCostAndQty": "Unit Cost \nx Quantity",
+    "@unitCostAndQty": {},
+    "summary": "Summary",
+    "@summary": {},
+    "breakdown": "Breakdown",
+    "@breakdown": {},
+    "figure": "Figure",
+    "@figure": {},
+    "refundCharge": "Cost to refund",
+    "@refundCharge": {},
+    "tokenRecorded": "Token recorded",
+    "@tokenRecorded": {},
+    "expenseRecorded": "Expense recorded",
+    "@expenseRecorded": {},
+    "studentFaqs": "View student FAQs",
+    "@studentFaqs": {},
+    "weather": "Weather",
+    "@weather": {},
+    "temperature": "Temperature: {min} - {max} ({avg})",
+    "@temperature": {
+        "placeholders": {
+            "min": {
+                "type": "String"
+            },
+            "max": {
+                "type": "String"
+            },
+            "avg": {
+                "type": "String"
+            }
+        }
+    },
+    "humidity": "Humidity: {min} - {max} ({avg})",
+    "@humidity": {
+        "placeholders": {
+            "min": {
+                "type": "String"
+            },
+            "max": {
+                "type": "String"
+            },
+            "avg": {
+                "type": "String"
+            }
+        }
+    },
+    "visibility": "Visibility: {min} - {max} ({avg})",
+    "@visibility": {
+        "placeholders": {
+            "min": {
+                "type": "String"
+            },
+            "max": {
+                "type": "String"
+            },
+            "avg": {
+                "type": "String"
+            }
+        }
+    },
+    "precipitationProbability": "Precipitation Probability: {min} - {max} ({avg})",
+    "@precipitationProbability": {
+        "placeholders": {
+            "min": {
+                "type": "String"
+            },
+            "max": {
+                "type": "String"
+            },
+            "avg": {
+                "type": "String"
+            }
+        }
+    },
+    "dressingRecommendations": "Dressing Recommendations",
+    "@dressingRecommendations": {},
+    "day": "Day {day} | {summary}",
+    "@day": {
+        "placeholders": {
+            "day": {
+                "type": "int"
+            },
+            "summary": {
+                "type": "String"
+            }
+        }
+    },
+    "depaturePlanning": "Depature Planning",
+    "@depaturePlanning": {},
+    "estimatedTravelTime": "Estimated Travel Time: {time}",
+    "@estimatedTravelTime": {
+        "placeholders": {
+            "time": {
+                "type": "String"
+            }
+        }
+    },
+    "estimatedDistance": "Estimated Distance: {distance}",
+    "@estimatedDistance": {
+        "placeholders": {
+            "distance": {
+                "type": "String"
+            }
+        }
+    },
+    "estimationDisclaimer": "* This estimate is made from Tumaini House to the mission ground and may not be accurate. Please plan accordingly.",
+    "@estimationDisclaimer": {},
+    "gallery": "Gallery",
+    "@gallery": {},
+    "upload": "Upload",
+    "@upload": {},
+    "willUpload": "Your media will be uploaded as you continue to use the app",
+    "@willUpload": {},
+    "doneUploading": "Your media has been uploaded, you can refresh the page to see them.",
+    "@doneUploading": {},
+    "tapToAdd": "Tap here to add",
+    "@tapToAdd": {},
+    "cancel": "Cancel",
+    "@cancel": {},
+    "noSessions": "No sessions",
+    "@noSessions": {},
+    "sessions": "Sessions",
+    "@sessions": {},
+    "info": "Tap any session to edit \nLong press to delete",
+    "@info": {},
+    "time": "Start - End",
+    "@time": {},
+    "facilitator": "Facilitator",
+    "@facilitator": {},
+    "speaker": "Speaker",
+    "@speaker": {},
+    "notes": "Preparation notes",
+    "@notes": {},
+    "selectFacilitator": "Select Facilitator",
+    "@selectFacilitator": {},
+    "selectSpeaker": "Select Speaker",
+    "@selectSpeaker": {},
+    "enterNotes": "Enter preparation notes",
+    "@enterNotes": {},
+    "addStartEnd": "Add start and end time",
+    "@addStartEnd": {},
+    "sessionRecorded": "Session recorded",
+    "@sessionRecorded": {},
+    "startTime": "Start Time",
+    "@startTime": {},
+    "endTime": "End Time",
+    "@endTime": {},
+    "blank": "",
+    "@blank": {},
+    "confirmDelete": "Are you sure you want to delete this?",
+    "@confirmDelete": {},
+    "deleteSession": "Delete Session",
+    "@deleteSession": {},
+    "delete": "Delete",
+    "@delete": {},
+    "sessionDeleted": "Session deleted",
+    "@sessionDeleted": {},
+    "noPhotos": "No photos",
+    "@noPhotos": {},
+    "addPhotos": "Add Photos",
+    "@addPhotos": {},
+    "suggestAMission": "Suggest a mission",
+    "@suggestAMission": {},
+    "noSuggestedMissionGrounds": "No suggested mission grounds",
+    "@noSuggestedMissionGrounds": {},
+    "missionGroundRecorded": "Your suggested mission to {ground} has been recorded",
+    "@missionGroundRecorded": {
+        "placeholders": {
+            "ground": {
+                "type": "String"
+            }
+        }
+    },
+    "enterMissionGround": "Enter mission ground",
+    "@enterMissionGround": {},
+    "contactPerson": "Contact Person",
+    "@contactPerson": {},
+    "enterContactPerson": "Enter contact person's name",
+    "@enterContactPerson": {},
+    "contactNumber": "Contact's Phone Number",
+    "@contactNumber": {},
+    "enterContactNumber": "Enter contact person's number",
+    "@enterContactNumber": {},
+    "suggest": "Suggest",
+    "@suggest": {},
+    "suggesting": "Suggesting...",
+    "@suggesting": {},
+    "status": "Status",
+    "@status": {},
+    "comments": "Notes",
+    "@comments": {}
 }
